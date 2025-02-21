@@ -54,3 +54,7 @@ graphviz
 
 # Feature Engineering & ML utilities
 mlxtend
+
+
+# macbook pro 4 max additions
+# pip install tensorflow-macos tensorflow-metal keras
