@@ -52,8 +52,8 @@ Clone this repository and install dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tunnel-displacement-ml.git
-cd tunnel-displacement-ml
+https://github.com/nickmirunsw/tunnel-image-recognition.git #
+cd tunnel-image-recongnition
 
 # Create a virtual environment
 python -m venv venv
@@ -66,11 +66,11 @@ pip install -r requirements.txt
 
 # Usage
 
-## Train the Model
+## Train the Model - to be updated
 To train the displacement extraction model, use the following command:
 
 ```bash
-python train.py --data_path ./data
+python train.py --data_path ./data 
 ```
 
 ## Predict Displacement Values
