@@ -1,42 +1,40 @@
-# tunnel-image-recognition
-
-# Tunnel Displacement Analysis using Machine Learning
+# github-repo tunnel-image-recognition
 
 ## Overview
 
-This project is an **image recognition system** designed to read and analyze **tunnel design graphical outputs**, specifically **displacement contour plots**. By leveraging machine learning, the system automates the extraction of displacement values (e.g., at the **crown** and **sidewalls**) from these graphical outputs. The goal is to **save time, reduce manual errors, and streamline engineering reporting**.
+This project is an **image recognition system** designed to read and analyse **tunnel design graphical outputs**. By leveraging machine learning, the system automates the extraction of output key values from these graphical outputs. The goal is to **save time, reduce manual errors, and streamline engineering reporting**.
 
 ## Objectives
 
-- Develop a **machine learning-based system** using TensorFlow to process **displacement contour plots**.
-- Extract key displacement values such as **maximum displacements** at the **crown and sidewalls**.
+- Develop a **machine learning-based system** using TensorFlow to process **contour plots**.
+- Extract key values such as **maximum displacements** at the **crown and sidewalls**.
 - Automatically **tabulate** the extracted results for seamless integration into engineering reports.
 
 ## Technical Approach
 
 ### 1. Data Preparation
-- **Dataset:** Collect and annotate displacement contour plot images with corresponding displacement values.
-- **Annotations:** Label the **crown** and **sidewall** regions for precise extraction of displacement values.
-- **Preprocessing:** Normalize images and apply **noise reduction** techniques to enhance data quality.
+- **Dataset:** Collect and annotate contour plot images with corresponding values.
+- **Annotations:** Label the **crown** and **sidewall** regions for precise extraction of output values.
+- **Preprocessing:** Normalise images and apply **noise reduction** techniques to enhance data quality.
 
 ### 2. Model Architecture
-- **Feature Extraction:** Utilize **Convolutional Neural Networks (CNNs)** to identify **regions of interest** (e.g., crown and sidewalls) and extract relevant features.
-- **Regression Layer:** Implement **regression layers** for predicting numerical displacement values.
+- **Feature Extraction:** Utilise **Convolutional Neural Networks (CNNs)** to identify **regions of interest** (e.g., crown and sidewalls) and extract relevant features.
+- **Regression Layer:** Implement **regression layers** for predicting numerical values.
 - **Tools:** Leverage **TensorFlow/Keras** for model development and training.
 
 ### 3. Training and Validation
-- **Loss Function:** Use **Mean Squared Error (MSE)** for optimizing numerical predictions.
-- **Evaluation Metrics:** Validate model accuracy using **Mean Absolute Error (MAE)** and **R² score**.
-- **Augmentation:** Apply techniques such as **rotation** and **scaling** to improve generalization.
+- **Loss Function:** Use **Mean Squared Error (MSE)** for optimising numerical predictions.
+- **Evaluation Metrics:** Validate model accuracy using **Mean Absolute Error (MAE)**.
+- **Augmentation:** Apply techniques such as **rotation** and **scaling** to improve generalisation.
 
 ### 4. Prediction Pipeline
 - **Input Handling:** Accept **numerical contour plot images** and preprocess them for model compatibility.
-- **Inference:** Pass processed images through the trained model to **extract displacement values**.
-- **Output:** Generate a structured output containing **predicted displacements** for the **crown and sidewalls**.
+- **Inference:** Pass processed images through the trained model to **extract output values**.
+- **Output:** Generate a structured output containing **predicted values** for the **i.e. crown and sidewalls**.
 
 ### 5. Integration and Automation
 - **Automate the prediction pipeline** for **real-time usage**.
-- **Develop a tabulation script** to compile **displacement values into engineering reports**.
+- **Develop a tabulation script** to compile **output values into engineering reports**.
 
 ## Installation
 
@@ -76,7 +74,7 @@ python train.py --data_path ./data
 ```
 
 ## Predict Displacement Values
-To run inference on a displacement contour plot:
+To run inference on a contour plot:
 
 ```bash
 python predict.py --image_path ./test_images/sample.png
@@ -90,10 +88,10 @@ python generate_report.py --results_path ./results
 ```
 
 # Benefits
-- **Efficiency:** Automates displacement analysis, significantly reducing manual effort.
-- **Accuracy:** Leverages machine learning to minimize errors in value extraction.
-- **Scalability:** Adaptable to various tunnel geometries and displacement ranges.
-- **Consistency:** Ensures standardized output across multiple projects.
+- **Efficiency:** Automates analysis, significantly reducing manual effort.
+- **Accuracy:** Leverages machine learning to minimise errors in value extraction.
+- **Scalability:** Adaptable to various tunnel geometries and ranges.
+- **Consistency:** Ensures standardised output across multiple projects.
 
 # Contributing
 We welcome contributions to enhance this project. Please follow these steps:
