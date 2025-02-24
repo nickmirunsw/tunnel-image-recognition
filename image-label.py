@@ -120,7 +120,7 @@ class ImageLabelingApp:
         # **Row for Vertical Displacement (Crown Values)**
         self.crown_frame = tk.Frame(master)
         self.crown_frame.pack(pady=5)
-        tk.Label(self.crown_frame, text="Vertical Displacement (Crown Values):").grid(row=0, column=0, columnspan=5)
+        tk.Label(self.crown_frame, text="(Crown Values):").grid(row=0, column=0, columnspan=5)
 
         self.crown_entries = []
         for i in range(4):
@@ -132,7 +132,7 @@ class ImageLabelingApp:
         # **Row for Horizontal Displacement (Sidewall Left)**
         self.sidewall_left_frame = tk.Frame(master)
         self.sidewall_left_frame.pack(pady=5)
-        tk.Label(self.sidewall_left_frame, text="Horizontal Displacement (Sidewall Left):").grid(row=0, column=0, columnspan=5)
+        tk.Label(self.sidewall_left_frame, text="(Sidewall Left):").grid(row=0, column=0, columnspan=5)
 
         self.sidewall_left_entries = []
         for i in range(4):
@@ -144,7 +144,7 @@ class ImageLabelingApp:
         # **Row for Horizontal Displacement (Sidewall Right)**
         self.sidewall_right_frame = tk.Frame(master)
         self.sidewall_right_frame.pack(pady=5)
-        tk.Label(self.sidewall_right_frame, text="Horizontal Displacement (Sidewall Right):").grid(row=0, column=0, columnspan=5)
+        tk.Label(self.sidewall_right_frame, text="(Sidewall Right):").grid(row=0, column=0, columnspan=5)
 
         self.sidewall_right_entries = []
         for i in range(4):
